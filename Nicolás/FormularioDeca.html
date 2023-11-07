@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Decathlon</title>
+    <style>
+        h1{
+            text-align: center;
+        
+                .color1{
+                    font-weight: bold;
+                    color: black;
+                }
+                .color2{
+                    font-weight: bold;
+                    color: lightseagreen;
+                }
+        }
+        fielset{
+            border: none;
+
+                    label{
+                        
+                    }
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1> <span class="color1">CONTACTA</span> <span class="color2">CON NUESTRO EQUIPO</span> </h1>
+    <form action="servicio.php" method="post"> 
+        
+        <fieldset>
+            <legend class="color2">MIS DATOS</legend>
+                <label for="apellido">Apellidos</label><br>
+                <input type="text" id="apellido" name="Apellidos" required><br>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="Nombre" id="nombre" required><br>
+                <label for="correo">Dirección de Correo Electrónico</label><br>
+                <input type="email" name="email" id="email">
+        </fieldset><br>
+        <fieldset>
+            <legend>MI CONSULTA</legend>
+                <label for=categoria >
+                    Seleccione una categoría
+                </label>
+                <input type="text" id="categoria" name="Categoria" list="ListaCategoria" required>
+                <datalist label="Seleccione una categoría" id="ListaCategoria">
+                        <option label="Deportes" value="Deportes">
+                        <option label="Mujer" value="Mujer">
+                        <option label="Infantil" value="Infantil">
+                </datalist><br>
+
+                <label for="pedido">Pedido</label>
+                <input type="text" name="Pedido" id="pedido"><br>
+                
+                Escribe un texto descriptivo: <br>
+                    <textarea rows=”10” cols=”40” name=”texto”></textarea>
+                    
+            <legend>
+        </fieldset>
+       
+        <button class="enviar" type="submit">ENVIAR</button>
+        <button class="reset" type="reset">Borrar Consulta</button>
+        
+    </form>
+</body>
+</html>
