@@ -3,40 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bandera{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align:left ;
+
+        }
+        .posicion{
+            align-content: left;
+
+        }
+        .posicion2{
+            text-align: right;
+        }
+        .input{
+            width: 420px;
+            height: 30px;
+        }
+        .contacta{
+            align-content:top, center;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .padding{
+            padding:10px;
+        }
+        
+
+    </style>
     <title>Decathlon/Información personal</title>
 </head>
+<div class="posicion">
 <body>
+    <div class="contacta">
+        <p><h1>CONTACTA CON NUESTRO EQUIPO</h1></p>
+    </div>
     <h4>MIS DATOS</h4>
-    <div>
+    <div class="padding">
         <label for="Apellido">Apellido*</label><br>
-        <input type="text" id="apellido" name="apellido"><br>
+        <input  class="input" type="text" id="apellido" name="apellido"><br>
     </div>
-    <div>
+    <div class="padding">
         <label for="Nombre">Nombre*</label><br>
-        <input type="text" id="nombre" name="nombre">
+        <input class="input"type="text" id="nombre" name="nombre">
     </div>
-    <div>
-        <label for="Correo">Dirección de correo electrónico</label><br>
-        <input type="text" id="correo" name="correo"><br>
+    <div class="padding">
+        <label for="correo">Dirección de correo electrónico</label><br>
+        <input class="input" type="text" id="correo" name="correo"><br>
     </div>
+    <div class="padding">
         <label for="pais" id="pais">
             Pais
         </label>
         <select name="pais">
-            <option value="es">+34</option>
-            <option value="fr">+33</option>
-            <option value="alm">+49</option>
-            <option value="aust">+61</option>
-            <option value="dinam">+45</option>
-            <option value="rum">+40</option>
-            <option value="luxem">+352</option>
-            <option value="it">+39</option>
+            <option value="es">España +34 </option>
+            <option value="fr">Francia+33</option>
+            <option value="alm"> Alemania +49</option>
+            <option value="it"> Italia +39</option>
+            <option value="port">Portugal +351</option>
+            <option value="And">Andorra +376</option>
+            <option value="UK">Reino Unido +44</option>
         </select>
 
-    <div>
 
+        <label for="telefono">Teléfono Móvil</label>
+        <input type="text" id="telefono" name="telefono"><br>
     </div>
+</div>
     
     
 </body>
 </html>
+
+
+
+
+
