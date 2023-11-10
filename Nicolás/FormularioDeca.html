@@ -5,7 +5,7 @@
     <style>
         h1{
             text-align: center;
-        
+        }
                 .color1{
                     font-weight: bold;
                     color: black;
@@ -14,6 +14,10 @@
                     font-weight: bold;
                     color: lightseagreen;
                 }
+
+        h2{
+            color: lightseagreen;
+            font-weight: bold;
         }
         form {
             background-color: #ffff;
@@ -33,11 +37,51 @@
             padding: 10px;
         }
         .btn {
-            float: right;
-            width: 20%;
+            float: center;
+            width: 30%;
             padding: 10px;
+            
         }
+         /* Estilos adicionales para hacer el formulario más atractivo */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 60%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
 
+    input[type="submit"] {
+      background-color: lightseagreen;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="reset"] {
+      background-color: lightseagreen;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+   
+    
+
+    input[type="submit"]:hover {
+      background-color: seagreen;
+    }
+    input[type="reset"]:hover {
+      background-color: red;
+    }
+
+    
     
     </style>
 </head>
@@ -57,26 +101,27 @@
     </div>
      <div class="column">
             <h2>MI CONSULTA</h2>
-                <label for=categoria>
-                    Categoria
-                </label>
+                <label for=categoria>Categoria</label><br>
                     <input type="text" id="categoria" name="Categoria" list="ListaCategoria" required>
                         <datalist label="Seleccione una categoría" id="ListaCategoria">
                             <option label="Deportes" value="Deportes">
                             <option label="Mujer" value="Mujer">
                             <option label="Infantil" value="Infantil">
                         </datalist><br>
-                    <label for="pedido">Pedido</label>
+                    <label for="pedido">Pedido</label><br>
                     <input type="text" name="Pedido" id="pedido"><br>
                 
                     Escribe un texto descriptivo: <br>
-                        <textarea rows=”10” cols=”40” name=”texto”></textarea>
+                        <textarea rows=”10” cols=”40” name=”texto”></textarea><br><br>
+
+                        <label for="adjuntar-archivo">Adjuntar Archivo:</label><br>
+                            <input type="file" id="adjuntar-archivo" name="adjuntar-archivo"><br>
                     
            
      </div>
      <div class="btn">
-        <button class="enviar" type="submit">ENVIAR</button>
-        <button class="reset" type="reset">Borrar Consulta</button>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Eliminar Consulta">
      </div>  
                 
         </form>
