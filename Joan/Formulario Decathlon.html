@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -11,13 +12,26 @@
             vertical-align:left ;
 
         }
+        body{
+            display:flex;
+            flex:1;
+        }
         .posicion{
-            align-content: left;
+            flex:1;
+            padding:20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .Consulta{
+            flex:1;
+            padding:20px;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 160px;
 
         }
-        .posicion2{
-            text-align: right;
-        }
+       
+        
         .input{
             width: 420px;
             height: 30px;
@@ -26,6 +40,7 @@
             align-content:top, center;
             padding: 20px;
             text-align: center;
+
             
         }
         .padding{
@@ -38,10 +53,14 @@
 </head>
 <div class="posicion">
 <body>
+
     <div class="contacta">
         <p><h1>CONTACTA CON NUESTRO EQUIPO</h1></p>
     </div>
-    <h4>MIS DATOS</h4>
+
+    <form action="página/servicio" method="POST"></form>
+   
+    <h4>MIS DATOS</h4> <!-- INICIO DEL FORMULARIO NOMBRES,APELLIDOS , CORREO-->
     <div class="padding">
         <label for="Apellido">Apellido*</label><br>
         <input  class="input" type="text" id="apellido" name="apellido"><br>
@@ -58,7 +77,7 @@
         <label for="pais" id="pais">
             Pais
         </label>
-        <select name="pais">
+        <select name="pais" id="pais">
             <option value="es">España +34 </option>
             <option value="fr">Francia+33</option>
             <option value="alm"> Alemania +49</option>
@@ -72,6 +91,59 @@
         <label for="telefono">Teléfono Móvil</label>
         <input type="text" id="telefono" name="telefono"><br>
     </div>
+</div>
+
+<div class="Consulta"><!-- AQUI COMIENZA LA CONSULTA POR CATEGORIA , PEDIDO, MENSAJE QUE IREMOS DIVIENDO EN 2 PARTES CON MIS DATOS QUE ES EL OTRO DIV-->
+    <form action="página/servicio" method="POST"></form>
+    <h4>MI CONSULTA</h4>
+    <div class="padding">
+        <label for="categoria" id="categoria">Categoria *</label>
+        <select class="input" name="categoria" id="categoria">
+        
+    <option> Seleccionar una categoría</option>
+    <optgroup label="Mi pedido online">
+        <option value="marketplace">Mi pedido online Marketplace</option>
+        <option value="seguimiento">Seguimiento de mi pedido</option>
+        <option value="cambiar direccion">Cambiar dirección entrega</option>
+        <option value="cancelar">Cancelar mi pedido</option>
+        <option value="consulta factura">Consulta sobre factura</option>
+        <option value="seguimiento devolucion">Seguimiento de mi devolucion</option>
+    </optgroup>
+
+        <optgroup label="Devoluciones">
+            <option value="seguimiento reembolso">Seguimiento de mi reembolso</option>
+            <option value="garantia">Garantía</option>
+        </optgroup>
+
+        <optgroup label="Información online">
+            <option value="tiendas y servicios">Tiendas y servicios</option>
+            <option value="decathlon">Decathlon PRO</option>
+        </optgroup>
+    </select>
+    </div>
+    
+    <div class="padding">
+        <label for="pedido" id="pedido">Pedido</label>
+        <input  class="input" type="text" id="pedido" name="pedido"><br>
+    </div>
+
+    <div class="padding">
+        <p>Mensaje *</p><br>
+        <textarea rows="10" cols="40" name="texto"></textarea><br>
+        <input class="input" type="file" name="archivo" id="texto"><br>
+    </div>
+
+    <div class="padding">
+        <label for="aceptar condiciones">Acepto que mis datos personales sean utlizados para este servicio. *</label>       
+        <input class="input" type="checkbox" name="datos" id="datos"
+				value="datos"><br>
+    </div>
+
+</div>
+
+
+<div>
+    <button name="boton" id="boton" type="submit" form="apellido, nombre, correo,pais,telefono,categoria,pedido,texto,datos" >Enviar</button>
 </div>
     
     
