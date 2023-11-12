@@ -12,23 +12,29 @@
             vertical-align:left ;
 
         }
-        body{
-            display:flex;
-            flex:1;
+          .columna {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
         }
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+       
+        
         .posicion{
             flex:1;
-            padding:20px;
+            
             box-sizing: border-box;
             position: relative;
         }
         .Consulta{
-            flex:1;
-            padding:20px;
-            box-sizing: border-box;
-            position: relative;
-            margin-top: 160px;
-
+           
+         
+          padding-top:40px;
+            
+          
         }
        
         
@@ -37,14 +43,19 @@
             height: 30px;
         }
         .contacta{
-            align-content:top, center;
-            padding: 20px;
+            align-content:center;
+            
             text-align: center;
+            padding-right: 130px;
+            background-color: gray;
 
             
         }
         .padding{
             padding:10px;
+        }
+        span{
+            color:#0082c3;
         }
         
 
@@ -52,16 +63,17 @@
     <title>Decathlon/Información personal</title>
 </head>
 <div class="posicion">
-<body>
-
+ <body>
     <div class="contacta">
-        <p><h1>CONTACTA CON NUESTRO EQUIPO</h1></p>
+        <h3>CONTACTA 
+            <span>CON NUESTRO EQUIPO</span></h3>
     </div>
+
 
     <form action="página/servicio" method="POST"></form>
    
     <h4>MIS DATOS</h4> <!-- INICIO DEL FORMULARIO NOMBRES,APELLIDOS , CORREO-->
-    <div class="padding">
+    <div class="columna">
         <label for="Apellido">Apellido*</label><br>
         <input  class="input" type="text" id="apellido" name="apellido"><br>
     </div>
@@ -139,12 +151,16 @@
 				value="datos"><br>
     </div>
 
+    <div>
+        <button name="boton" id="boton" type="submit" form="apellido, nombre, correo,pais,telefono,categoria,pedido,texto,datos" >Enviar</button>
+    </div>
+
 </div>
 
 
-<div>
-    <button name="boton" id="boton" type="submit" form="apellido, nombre, correo,pais,telefono,categoria,pedido,texto,datos" >Enviar</button>
-</div>
+
+
+
     
     
 </body>
