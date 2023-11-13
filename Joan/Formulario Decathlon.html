@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bandera{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align:left ;
+
+        }
+          .columna {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+       
+        
+        .posicion{
+            flex:1;
+            
+            box-sizing: border-box;
+            position: relative;
+        }
+        .Consulta{
+           
+         
+          padding-top:100px;
+            
+          
+        }
+        .padding{
+            padding-top: 40px;
+            padding-right: 40px;
+        }
+       
+        
+        .input{
+            width: 420px;
+            height: 30px;
+        }
+        .contacta{
+            align-content:center;
+            
+            text-align: center;
+            padding-right: 130px;
+            background-color: gray;
+            padding-bottom:40px ;
+
+            
+        }
+       
+        .Color{
+            color:#0082c3;
+        }
+
+        .Check{
+
+            margin-right:10px; /* ajusta el check en el margen derecho segun lo que se necesite*/
+            align-items: left;
+            transform:scale(0.8);/*ajusta el tamaño del check*/
+        }
+        .DivCheckConsluta{
+           
+            
+            padding-top:20px;
+        }
+        .paddinglabelConsult{
+            padding-left:20px;
+            padding-bottom: 20px;
+            
+        }
+        .paddingbottomConsult{
+            transform: (4.9);
+            padding-left: 500px;
+            padding-top:60px;
+            color:#0082c3;
+        }
+        
+        
+
+    </style>
+    <title>Decathlon/Información personal</title>
+</head>
+<div class="posicion">
+ <body>
+    <div class="contacta">
+        <h3>CONTACTA 
+            <span class="Color">CON NUESTRO EQUIPO</span></h3>
+    </div>
+
+
+    <form action="página/servicio" method="POST"></form>
+   
+    <h4 class="Color">MIS DATOS</h4> <!-- INICIO DEL FORMULARIO NOMBRES,APELLIDOS , CORREO-->
+    <div class="columna,padding">
+        <label for="Apellido">Apellido*</label><br>
+        <input  class="input" type="text" id="apellido" name="apellido"><br>
+    </div>
+    <div class="padding">
+        <label for="Nombre">Nombre*</label><br>
+        <input class="input"type="text" id="nombre" name="nombre">
+    </div>
+    <div class="padding">
+        <label for="correo">Dirección de correo electrónico</label><br>
+        <input class="input" type="text" id="correo" name="correo"><br>
+    </div>
+    <div class="padding">
+        <label for="pais" id="pais">
+            Pais
+        </label>
+        <select name="pais" id="pais">
+            <option value="es">España +34 </option>
+            <option value="fr">Francia+33</option>
+            <option value="alm"> Alemania +49</option>
+            <option value="it"> Italia +39</option>
+            <option value="port">Portugal +351</option>
+            <option value="And">Andorra +376</option>
+            <option value="UK">Reino Unido +44</option>
+        </select>
+
+
+        <label for="telefono">Teléfono Móvil</label>
+        <input type="text" id="telefono" name="telefono"><br>
+    </div>
+</div>
+
+<div class="Consulta"><!-- AQUI COMIENZA LA CONSULTA POR CATEGORIA , PEDIDO, MENSAJE QUE IREMOS DIVIENDO EN 2 PARTES CON MIS DATOS QUE ES EL OTRO DIV-->
+    <form action="página/servicio" method="POST"></form>
+    <h4 class="Color">MI CONSULTA</h4>
+    <div>
+        <label class= "padding" for="categoria" id="categoria">Categoria *</label>
+        <select class="input" name="categoria" id="categoria">
+        
+    <option> Seleccionar una categoría</option>
+    <optgroup label="Mi pedido online">
+        <option value="marketplace">Mi pedido online Marketplace</option>
+        <option value="seguimiento">Seguimiento de mi pedido</option>
+        <option value="cambiar direccion">Cambiar dirección entrega</option>
+        <option value="cancelar">Cancelar mi pedido</option>
+        <option value="consulta factura">Consulta sobre factura</option>
+        <option value="seguimiento devolucion">Seguimiento de mi devolucion</option>
+    </optgroup>
+
+        <optgroup label="Devoluciones">
+            <option value="seguimiento reembolso">Seguimiento de mi reembolso</option>
+            <option value="garantia">Garantía</option>
+        </optgroup>
+
+        <optgroup label="Información online">
+            <option value="tiendas y servicios">Tiendas y servicios</option>
+            <option value="decathlon">Decathlon PRO</option>
+        </optgroup>
+    </select>
+    </div>
+    
+    <div class="padding">
+        <label for="pedido" id="pedido">Pedido</label>
+        <input  class="input" type="text" id="pedido" name="pedido"><br>
+    </div>
+
+    <div class="padding">
+        <p>Mensaje *</p><br>
+        <textarea rows="10" cols="40" name="texto"></textarea><br>
+        <input class="input" type="file" name="archivo" id="texto"><br>
+    </div>
+
+    <div class="DivCheckConsluta">
+        <input class="input,Check" type="checkbox" name="datos" id="datos"
+				value="datos"><br>
+        <label class="paddinglabelConsult" for="aceptar condiciones">Acepto que mis datos personales sean utlizados para este servicio. *</label>       
+        
+    </div>
+
+    <div class="paddingbottomConsult">
+        <button name="boton" id="boton" type="submit" form="apellido, nombre, correo,pais,telefono,categoria,pedido,texto,datos" >Enviar</button>
+    </div>
+
+</div>
+
+
+
+
+
+    
+    
+</body>
+</html>
+
+
+
+
+
