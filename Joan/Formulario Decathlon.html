@@ -21,87 +21,81 @@
             margin:0;/*Elimina los margenes predeterminado del cuerpo o etiqueta*/
         }
         
-       
-       
-        
-        .DivConsulyDatos{
-          width: 50px;
-          
+        .PosicionDatos {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
         }
-           
-        .padding{
-            padding-top: 40px;
-            padding-right: 40px;
-        }
-       
-    
-        .contacta{
-            align-content:center;
+
+        .PosicionConsulta {
+            width: 50%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
             
+        }
+
+        .contacta {
             text-align: center;
-            padding-left: 140px;
-            padding-bottom:40px ;
-
-            
-        }
-       
-        .Color{
-            color:#0082c3;
+            padding: 20px;
+            background-color: #f2f2f2; /* Agrega un fondo de color gris claro */
         }
 
-        .Check{
+        .Color {
+            color: #0082c3;
+        }
 
-            margin-right:10px; /* ajusta el check en el margen derecho segun lo que se necesite*/
-            align-items: left;
-            transform:scale(0.8);/*ajusta el tamaño del check*/
+        label {
+            display: block; /* Hace que las etiquetas se muestren en una nueva línea */
+            margin-bottom: 5px;
         }
-        
-        
-        .paddingbottomConsult{
-            transform: (4.9);
-            padding-left: 500px;
-            padding-top:60px;
-            color:#0082c3;
-        }
-       
-        .Consulta{
-            padding-left: 700px;
-            margin: 0; /* para que no haya margenes*/
-            margin-left:200px;
-            
-            
-            
-            
-        }
-        .PosicionDatos{
-            width: 50px;
-            padding:20px;
-            float:left;
-        }
-        .PosicionConsulta{
-            width: 500px;
-            height: 500px;
-            float:right;
-           
-        }
-        input{
-            height: 30px;
+
+        input,textarea {
             width: 400px;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
         }
-        
+
+        textarea {
+            resize: vertical; /* Permite redimensionar solo verticalmente */
+        }
+
+        .input-file {
+            margin-bottom: 10px;
+        }
+
+        .Check {
+            margin-right: 10px;
+            transform: scale(0.8);
+        }
+
+        .paddingbottomConsult {
+            padding-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0082c3;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            align-items: right;
+        }
         
         
 
     </style>
     <title>Decathlon/Información personal</title>
 </head>
+
+<div class="contacta">
+    <h3>CONTACTA 
+        <span class="Color">CON NUESTRO EQUIPO</span></h3>
+</div>
 <div class="PosicionDatos">
  <body>
-    <div class="contacta">
-        <h3>CONTACTA 
-            <span class="Color">CON NUESTRO EQUIPO</span></h3>
-    </div>
-
 
     <form action="página/servicio" method="POST"></form>
 
@@ -142,12 +136,12 @@
 
 
 
-<div class="PosicionConsulta,Consulta"><!-- AQUI COMIENZA LA CONSULTA POR CATEGORIA , PEDIDO, MENSAJE QUE IREMOS DIVIENDO EN 2 PARTES CON MIS DATOS QUE ES EL OTRO DIV-->
+<div class="PosicionConsulta"><!-- AQUI COMIENZA LA CONSULTA POR CATEGORIA , PEDIDO, MENSAJE QUE IREMOS DIVIENDO EN 2 PARTES CON MIS DATOS QUE ES EL OTRO DIV-->
     <form action="página/servicio" method="POST"></form>
     <h4 class="Color">MI CONSULTA</h4>
 
-        <div class="paddingcategoria">
-            <label class= "padding" for="categoria" id="categoria">Categoria *</label>
+        <div>
+            <label  for="categoria" id="categoria">Categoria *</label>
             <select class="input" name="categoria" id="categoria">
         
                 <option> Seleccionar una categoría</option>
@@ -174,20 +168,20 @@
 
 
     
-        <div class="paddingPedido">
+        <div>
             <label for="pedido" id="pedido">Pedido</label>
             <input  class="input" type="text" id="pedido" name="pedido"><br>
         </div>
 
 
-        <div class="paddingMensaje,PosicionConsulta">
+        <div>
             <p>Mensaje *</p><br>
             <textarea rows="10" cols="40" name="texto"></textarea><br>
             <input class="input,categoriaInput" type="file" name="archivo" id="texto"><br>
         </div>
 
 
-        <div class="PosicionConsulta">
+        <div>
             <input class="input,Check" type="checkbox" name="datos" id="datos"
 			    	value="datos"><br>
             <label class="paddinglabelConsult" for="aceptar condiciones">Acepto que mis datos personales sean utlizados para este servicio. *</label>       
