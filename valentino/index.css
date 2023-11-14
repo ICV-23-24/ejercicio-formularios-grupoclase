@@ -48,22 +48,19 @@ input,textarea
     background-color: deepskyblue;
     color: white;
     padding: 10px;
-    width: 120px;
+    width: 150px;
     text-align: center;
     align-self: flex-end;
 }
 
-.send_button::after {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    content: ">";
-    font-size: large;
+ion-icon
+{
+    font-size: 20px;
+    transform: translateX(100%) translateY(20%);
+
 }
 .p1mi_consulta
 {
-    background-color: orange;
     width: 100%;
 }
 div
