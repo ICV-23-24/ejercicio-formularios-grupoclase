@@ -17,6 +17,9 @@
             padding: 20px;
             box-sizing: border-box;
         }
+        body{
+            margin:0;/*Elimina los margenes predeterminado del cuerpo o etiqueta*/
+        }
         
        
        
@@ -64,19 +67,26 @@
         .Consulta{
             padding-left: 700px;
             margin: 0; /* para que no haya margenes*/
-            position: relative;
             margin-left:200px;
+            
+            
+            
             
         }
         .PosicionDatos{
-            width: 500px;
-            height: 500px;
+            width: 50px;
+            padding:20px;
             float:left;
         }
         .PosicionConsulta{
-            width: 400px;
+            width: 500px;
             height: 500px;
-            float:left;
+            float:right;
+           
+        }
+        input{
+            height: 30px;
+            width: 400px;
         }
         
         
@@ -170,14 +180,14 @@
         </div>
 
 
-        <div class="paddingMensaje">
+        <div class="paddingMensaje,PosicionConsulta">
             <p>Mensaje *</p><br>
             <textarea rows="10" cols="40" name="texto"></textarea><br>
             <input class="input,categoriaInput" type="file" name="archivo" id="texto"><br>
         </div>
 
 
-        <div class="DivCheckConsluta">
+        <div class="PosicionConsulta">
             <input class="input,Check" type="checkbox" name="datos" id="datos"
 			    	value="datos"><br>
             <label class="paddinglabelConsult" for="aceptar condiciones">Acepto que mis datos personales sean utlizados para este servicio. *</label>       
