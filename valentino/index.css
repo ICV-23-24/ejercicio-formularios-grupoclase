@@ -1,0 +1,95 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+.title
+{
+    color: deepskyblue;
+}
+form h1 {
+    text-align: left;
+    color:deepskyblue;
+    font-size: x-large;
+    font-style: italic;
+}
+
+
+label
+{
+    margin: 1%;
+}
+input,textarea
+{
+    margin-bottom: 15px;
+    padding: 2%;
+}
+
+.send_button {
+    position: relative;
+    border: unset;
+    font-family: inherit;
+    background-color: deepskyblue;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.send_button::after {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    content: ">";
+    font-size: large;
+}
+.p1mi_consulta
+{
+    background-color: orange;
+    width: 100%;
+}
+div
+{
+    margin: 5%;
+    width: 100%;
+}
+.caja
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(-40%);
+}
+.caja1
+{
+    width: 20%;
+}
+.caja2
+{
+    width: 80%;
+}
+select
+{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
