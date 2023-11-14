@@ -1,0 +1,103 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+.title
+{
+    color: deepskyblue;
+}
+form h1 {
+    text-align: left;
+    color:deepskyblue;
+    font-size: x-large;
+    font-style: italic;
+}
+
+
+label
+{
+    margin: 1%;
+}
+input,textarea
+{
+    margin-bottom: 15px;
+    padding: 2%;
+}
+
+.send_button {
+    position: relative;
+    border: unset;
+    font-family: inherit;
+    background-color: deepskyblue;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+ion-icon
+{
+    font-size: 20px;
+    transform: translateX(100%) translateY(20%);
+
+}
+.p1mi_consulta
+{
+    width: 100%;
+}
+div
+{
+    margin: 5%;
+    width: 100%;
+}
+.caja
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(-20%) translateX(-6%);
+    width: 103%;
+}
+.caja div
+{
+    margin: 2%;
+}
+.caja1
+{
+    width: 20%;
+}
+.caja2
+{
+    width: 100%;
+}
+.caja2 input
+{
+    padding: 3%;
+}
+select
+{
+    width: 100%;
+    /* height: 30px; */
+    background-color: white;
+    padding: 15%;
+    transform: translateY(-3px);
+}
