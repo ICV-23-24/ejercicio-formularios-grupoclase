@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+            <div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellidos*</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="email">Dirección de correo electrónico*</label>
+                <input type="text" id="email" name="email" required>
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="espana">España</option>
+                    <option value="canada">Canada</option>
+                    <option value="grecia">Grecia</option>
+                </select>
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono">
+            </div>
+            <div>
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="queja">Queja</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="pedido">Pedido</label>
+                <input type="text" id="pedido" name="pedido">
+                <label for="mensaje">Mensaje*</label>
+                <textarea id="mensaje" name="mensaje" style="height:200px" required></textarea>
+                <label for="archivo">Adjuntar archivo (tamaño máximo 20MB)</label>
+                <input type="file" id="archivo" name="archivo">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
