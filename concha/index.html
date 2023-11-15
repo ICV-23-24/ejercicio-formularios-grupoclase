@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ejercicio formulario</title>
   </head>
-  <body></body>
+  <body>
+    <div class="form_container">
+      <h1>Conctacta con nuestro equipo</h1>
+      <form action="" method="post">
+        <div class="mis_datos">
+          <h2>Mis datos</h2>
+          <label for="lastname">Apellido</label>
+          <input type="text" name="lastname" id="lastname" required />
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" required />
+          <label for="mail">Dirección de correo electrónico</label>
+          <input type="email" name="mail" id="mail" required />
+          <label for="country">País</label>
+          <select name="country" id="country">
+            <option value="es">España +34</option>
+            <option value="de">Alemania +49</option>
+            <option value="fr">Francia +33/option></option>
+          </select>
+          <label for="phone">Teléfono móvil</label>
+          <input type="tel" />
+        </div>
+        <div class="mi_consulta">
+          <h2>Mi consulta</h2>
+          <label for="category">Categoría</label>
+          <select name="category" id="category" required>
+            Seleccionar una categoría
+          </select>
+          <label for="order">Pedido</label>
+          <input type="text" name="order" id="order" />
+          <label for="message">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <label for="file">Adjuntar archivo (tamaño máximo 20MB)</label>
+          <input type="file" name="file" id="file" />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
 </html>
