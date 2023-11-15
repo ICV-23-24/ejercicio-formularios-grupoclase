@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio formulario</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="form_container">
-      <h1>Conctacta con nuestro equipo</h1>
-      <form action="" method="post">
+    <h1>Conctacta con nuestro equipo</h1>
+    <div class="form_wrapper">
+      <form class="form" method="post">
         <div class="mis_datos">
           <h2>Mis datos</h2>
-          <label for="lastname">Apellido</label>
+          <label class="required" for="lastname">Apellido</label>
           <input type="text" name="lastname" id="lastname" required />
-          <label for="name">Nombre</label>
+          <label class="required" for="name">Nombre</label>
           <input type="text" name="name" id="name" required />
-          <label for="mail">Dirección de correo electrónico</label>
+          <label class="required" for="mail"
+            >Dirección de correo electrónico</label
+          >
           <input type="email" name="mail" id="mail" required />
-          <label for="country">País</label>
-          <select name="country" id="country">
-            <option value="es">España +34</option>
-            <option value="de">Alemania +49</option>
-            <option value="fr">Francia +33/option></option>
-          </select>
-          <label for="phone">Teléfono móvil</label>
-          <input type="tel" />
+          <div class="phone">
+            <label for="country">País</label>
+            <select name="country" id="country">
+              <option value="es">🇪🇸 +34</option>
+              <option value="de">🇩🇪 +49</option>
+              <option value="fr">🇫🇷 +33</option>
+            </select>
+            <label for="phone">Teléfono móvil</label>
+            <input type="tel" />
+          </div>
         </div>
         <div class="mi_consulta">
           <h2>Mi consulta</h2>
-          <label for="category">Categoría</label>
+          <label class="required" for="category">Categoría</label>
           <select name="category" id="category" required>
-            Seleccionar una categoría
+            <option value="">Selecciona una categoría</option>
           </select>
           <label for="order">Pedido</label>
           <input type="text" name="order" id="order" />
@@ -44,8 +49,8 @@
           ></textarea>
           <label for="file">Adjuntar archivo (tamaño máximo 20MB)</label>
           <input type="file" name="file" id="file" />
+          <button class="submit_button" type="submit">Enviar</button>
         </div>
-        <button type="submit">Enviar</button>
       </form>
     </div>
   </body>
