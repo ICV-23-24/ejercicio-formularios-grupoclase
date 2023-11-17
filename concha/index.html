@@ -9,7 +9,7 @@
   <body>
     <h1>Conctacta con nuestro equipo</h1>
     <div class="form_wrapper">
-      <form class="form" method="post">
+      <form class="form" action="procesar.php" method="post">
         <div class="mis_datos">
           <h2>Mis datos</h2>
           <label class="required" for="lastname">Apellido</label>
@@ -28,7 +28,7 @@
               <option value="fr">🇫🇷 +33</option>
             </select>
             <label for="phone">Teléfono móvil</label>
-            <input type="tel" />
+            <input type="tel" name="phone" />
           </div>
         </div>
         <div class="mi_consulta">
@@ -36,6 +36,7 @@
           <label class="required" for="category">Categoría</label>
           <select name="category" id="category" required>
             <option value="">Selecciona una categoría</option>
+            <option value="status">Estado de mi pedido</option>
           </select>
           <label for="order">Pedido</label>
           <input type="text" name="order" id="order" />
