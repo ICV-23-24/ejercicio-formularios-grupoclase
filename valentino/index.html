@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <h1>CONTACTA <span class="title">CON NUESTRO EQUIPO</span></h1>
+    <form action="" method="post">
+        <div class="p1">
+            <h1>MIS DATOS</h1>
+            <label for="name">Nombre <span style="color: red;">*</span></label><br>
+            <input type="text" required><br>
+
+            <label for="last_name">Apellidos <span style="color: red;">*</span></label><br>
+            <input type="text" required><br>
+
+            <label for="email">Dirección de correo electrónico <span style="color: red;">*</span></label><br>
+            <input type="email" required><br>
+            <div class="caja">
+                <div class="caja1">
+                    <label for="pais">Pais</label>
+                    <select name="opciones" id="">
+                        <option value="1">ESPAÑA</option>
+                        <option value="2">MARRUECOS</option>
+                        <option value="3">FRANCIA</option>
+                    </select>
+                </div>
+                <div class="caja2">
+                    <label for="phone">Teléfono móvil</label>
+                    <input type="number">
+                </div>
+            </div>
+        </div>
+        <div class="p2">
+            <h1>MI CONSULTA</h1>
+            <label for="">Categoría <span style="color: red;">*</span></label><br>
+            <input type="text" required><br>
+
+            <label for="">Pedido</label><br>
+            <input type="text"><br>
+
+            <label for="message">Mensaje <span style="color: red;">*</span></label><br>
+            <textarea name="" id="" cols="30" rows="10" required></textarea><br>
+
+            <button type="submit" class="send_button">ENVIAR <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
+    </form>
+</body>
+</html>
