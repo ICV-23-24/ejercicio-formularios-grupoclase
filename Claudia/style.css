@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 10px;
+}
+
+.black-text {
+    color: black; /* Color de texto negro */
+    font-style: italic; /* Texto en cursiva */
+}
+.blue-text, h3 {
+    color: rgb(0, 34, 255); /* Color de texto azul */
+    font-style: italic;
+}
+
+.column {
+    flex: 1;
+    padding: 50px;
+}
+
+.form {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.column1 {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Ajusta el margen inferior para reducir el espacio */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('./img/descarga.png') no-repeat right;
+    background-position: 95% 50%;
+    cursor: pointer;
+}
+
+.custom-select select::-ms-expand {
+    display: none;
+}
+
+.small-select {
+    width: 110px; /* Ajusta el ancho según tus necesidades */
+    
+}
+.r2{
+    width: 450px;
+}
