@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio formulario</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Conctacta con nuestro equipo</h1>
+    <div class="form_wrapper">
+      <form class="form" action="procesar.php" method="post">
+        <div class="mis_datos">
+          <h2>Mis datos</h2>
+          <label class="required" for="lastname">Apellido</label>
+          <input type="text" name="lastname" id="lastname" required />
+          <label class="required" for="name">Nombre</label>
+          <input type="text" name="name" id="name" required />
+          <label class="required" for="mail"
+            >Dirección de correo electrónico</label
+          >
+          <input type="email" name="mail" id="mail" required />
+          <div class="phone">
+            <label for="country">País</label>
+            <select name="country" id="country">
+              <option value="es">🇪🇸 +34</option>
+              <option value="de">🇩🇪 +49</option>
+              <option value="fr">🇫🇷 +33</option>
+            </select>
+            <label for="phone">Teléfono móvil</label>
+            <input type="tel" name="phone" />
+          </div>
+        </div>
+        <div class="mi_consulta">
+          <h2>Mi consulta</h2>
+          <label class="required" for="category">Categoría</label>
+          <select name="category" id="category" required>
+            <option value="">Selecciona una categoría</option>
+            <option value="status">Estado de mi pedido</option>
+          </select>
+          <label for="order">Pedido</label>
+          <input type="text" name="order" id="order" />
+          <label for="message">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <label for="file">Adjuntar archivo (tamaño máximo 20MB)</label>
+          <input type="file" name="file" id="file" />
+          <button class="submit_button" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

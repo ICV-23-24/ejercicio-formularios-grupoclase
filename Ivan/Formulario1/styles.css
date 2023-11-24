@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    span {
+        color:deepskyblue;
+    }
+}
+
+form h1 {
+    text-align: left;
+    color:deepskyblue;
+    font-size: x-large;
+    font-style: italic;
+}
+
+form :where(label) {
+    padding: 10px 0px;
+}
+
+form :where(input, textarea) {
+    margin-bottom: 15px;
+    width: clamp(200px, 80cqi, 400px);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.send_button {
+    position: relative;
+    border: unset;
+    font-family: inherit;
+    background-color: deepskyblue;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.send_button::after {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    content: ">";
+    font-size: large;
+}

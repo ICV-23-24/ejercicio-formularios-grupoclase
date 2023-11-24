@@ -1,0 +1,98 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form_wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:space-between;
+  padding: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.mis_datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin-right: 50px;
+  width: 100%;
+  padding: 10px;
+}
+
+.mis_datos h2 {
+  text-transform: uppercase;
+  color: rgba(0, 162, 255, 0.932);
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.mi_consulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mi_consulta h2 {
+  text-transform: uppercase;
+  color: rgba(0, 162, 255, 0.932);
+}
+
+.submit_button {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(0, 162, 255, 0.932);
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-width: 0;
+  align-self:flex-end;
+  margin-right: 95px;
+}
+
+.submit_button:after {
+  content: ">";
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+input {
+  height: 30px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#category {
+  height: 30px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#message {
+  height: auto;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+label.required:after {
+  content: "*";
+  color:red;
+}
